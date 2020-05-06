@@ -1,6 +1,7 @@
 package org.gradle.android
 
 import org.gradle.testkit.runner.GradleRunner
+import spock.lang.Ignore
 import spock.lang.Unroll
 
 /**
@@ -9,6 +10,7 @@ import spock.lang.Unroll
  * doesn't break with the latest versions of the build scan or gradle enterprise plugins
  * and check that it seems to have been applied.
  */
+@Ignore
 class BuildScanValueSanityTest extends AbstractTest {
     @Unroll
     def "build scan value is safe with Gradle 6 and gradle enterprise plugin version #pluginVersion"() {
